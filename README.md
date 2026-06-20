@@ -78,6 +78,10 @@ npm run dev -- --host 0.0.0.0
 
 Poi apri dal telefono l'indirizzo IP del PC con la porta indicata da Vite.
 
+## Sito
+
+Il sito è dispobibile a questo link: [(https://clima-click.vercel.app)]
+
 ## Script disponibili
 
 ```bash
