@@ -1,11 +1,7 @@
-export default function SiteFooter() {
+export default function SiteFooter({ logoSrc }: { logoSrc: string }) {
   return (
     <footer className="site-footer">
-      <img
-        className="footer-logo"
-        src="/ClimaClick Logo Orizzontale Chiaro PNG.png"
-        alt="ClimaClick"
-      />
+      <img className="footer-logo" src={logoSrc} alt="ClimaClick" />
       <section className="footer-block" aria-label="Informazioni progetto">
         <p className="footer-title">ClimaClick</p>
         <p className="footer-copy">&copy; 2026 ClimaClick v1.0.0. Tutti i diritti riservati.</p>
