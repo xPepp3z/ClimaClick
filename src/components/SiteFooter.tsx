@@ -8,13 +8,12 @@ export default function SiteFooter() {
       />
       <section className="footer-block" aria-label="Informazioni progetto">
         <p className="footer-title">ClimaClick</p>
-        <p className="footer-copy">&copy; 2026 ClimaClick v1.0.0. Tutti i diritti riservati.</p>
+        <p className="footer-copy">&copy; 2026 ClimaClick v1.0.1 <br></br> Tutti i diritti riservati.</p>
         <p className="footer-copy">API: Open-Meteo, Open-Meteo Geocoding e RainViewer.</p>
         <div className="footer-tags" aria-label="Tecnologie usate">
           <span>React</span>
           <span>TypeScript</span>
           <span>Vite</span>
-          <span>PWA</span>
           <span>Leaflet</span>
         </div>
       </section>
