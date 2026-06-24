@@ -3,17 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>ClimaClick | Meteo, previsioni e radar pioggia</title>
+    <meta
+      name="description"
+      content="ClimaClick e una web app meteo moderna con previsioni aggiornate, citta preferite, PWA e radar pioggia tramite API gratuite."
+    />
+    <meta
+      name="keywords"
+      content="ClimaClick, meteo, previsioni meteo, radar pioggia, PWA meteo, Open-Meteo, RainViewer, citta preferite"
+    />
+    <meta name="author" content="Giuseppe Gravagno" />
+    <meta name="application-name" content="ClimaClick" />
+    <meta name="generator" content="Vite, React, TypeScript" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://clima-click.vercel.app/" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="color-scheme" content="dark" />
+
     <meta name="theme-color" content="#101417" />
+    <meta name="theme-color" content="#101417" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="ClimaClick" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="icon" href="./ClimaClick solo logo.png" type="image/png" />
-    <link rel="apple-touch-icon" href="./ClimaClick solo logo.png" />
+    <meta name="msapplication-TileColor" content="#101417" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ClimaClick" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:url" content="https://clima-click.vercel.app/" />
+    <meta property="og:title" content="ClimaClick | Meteo, previsioni e radar pioggia" />
     <meta
-      name="description"
-      content="ClimaClick, meteo moderno con previsioni aggiornate e citta preferite."
+      property="og:description"
+      content="Consulta meteo attuale, previsioni orarie e giornaliere, preferiti e radar pioggia in una web app veloce e installabile."
     />
-    <title>ClimaClick</title>
+    <meta property="og:image" content="https://clima-click.vercel.app/climaclick-logo-orizzontale.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
+    <meta property="og:image:alt" content="Logo ClimaClick" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClimaClick | Meteo, previsioni e radar pioggia" />
+    <meta
+      name="twitter:description"
+      content="Web app meteo in React e TypeScript con previsioni, preferiti, PWA e radar pioggia."
+    />
+    <meta name="twitter:image" content="https://clima-click.vercel.app/climaclick-logo-orizzontale.png" />
+    <meta name="twitter:image:alt" content="Logo ClimaClick" />
+
+    <link rel="icon" href="/ClimaClick solo logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/ClimaClick solo logo.png" />
+    <link rel="preconnect" href="https://api.open-meteo.com" />
+    <link rel="preconnect" href="https://geocoding-api.open-meteo.com" />
+    <link rel="preconnect" href="https://api.rainviewer.com" />
+    <link rel="preconnect" href="https://tilecache.rainviewer.com" />
+    <link
+      rel="preload"
+      as="image"
+      href="/climaclick-logo-orizzontale.png"
+    />
   </head>
   <body>
     <div id="root"></div>

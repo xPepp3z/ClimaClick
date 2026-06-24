@@ -76,6 +76,10 @@ npm run dev -- --host 0.0.0.0
 
 Poi apri dal telefono l'indirizzo IP del PC con la porta indicata da Vite.
 
+## Sito
+
+Il sito è dispobibile a questo link: [(https://clima-click.vercel.app)]
+
 ## Script disponibili
 
 ```bash
@@ -129,4 +133,3 @@ Il radar usa RainViewer e Leaflet. La timeline mostra i frame radar disponibili,
 Versione attuale: `1.0.0`.
 
 ClimaClick e pensato come progetto personale di apprendimento e sperimentazione, ma con una base concreta per diventare un piccolo servizio meteo completo.
-
