@@ -219,21 +219,6 @@ button {
   color: var(--text);
 }
 
-.install-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 42px;
-  padding: 0 13px;
-  border: 0;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--coral), var(--lime));
-  color: #17211f;
-  font-weight: 850;
-}
-
-.install-button:hover,
 .nav-links button:hover,
 .search-row button:hover,
 .favorite-button:hover,
@@ -1096,13 +1081,8 @@ button {
   }
 
   .nav-links a,
-  .nav-links button,
-  .install-button {
+  .nav-links button {
     flex: 1;
-  }
-
-  .install-button {
-    width: 100%;
   }
 
   .weather-hero {
@@ -1139,11 +1119,33 @@ button {
   .weather-ticker {
     align-items: stretch;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .ticker-label {
+    justify-content: center;
+    width: 100%;
+    min-height: 38px;
+    padding: 0 11px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .ticker-message {
+    align-items: flex-start;
+    min-width: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
   }
 
   .ticker-message span {
     overflow: visible;
+    text-overflow: clip;
     white-space: normal;
+  }
+
+  .ticker-dots {
+    justify-content: center;
   }
 
   .daily-list article,
@@ -1151,11 +1153,23 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .day-name {
+    width: 100%;
+  }
+
+  .day-name span {
+    max-width: 100%;
+  }
+
   .day-values {
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     gap: 8px;
+  }
+
+  .day-values small {
+    margin-left: auto;
   }
 
   .radar-controls {
@@ -1229,8 +1243,7 @@ button,
 .metric-grid article,
 .search-panel,
 .weather-ticker,
-.radar-controls,
-.install-button {
+.radar-controls {
   transition:
     background-color 180ms ease,
     border-color 180ms ease,
@@ -1279,7 +1292,6 @@ button,
 .search-row button:hover,
 .favorite-button:hover,
 .favorite-list button:hover,
-.install-button:hover,
 .nav-links button:hover,
 .nav-links a:hover {
   transform: translateY(-1px);
@@ -1341,3 +1353,4 @@ button,
     transition-duration: 1ms !important;
   }
 }
+

@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import CityWeather from "./pages/CityWeather";
 import Favorites from "./pages/Favorites";
 import RadarPage from "./pages/RadarPage";
-import InstallPrompt from "./components/InstallPrompt";
 import SiteFooter from "./components/SiteFooter";
 
 export default function App() {
@@ -54,8 +53,6 @@ export default function App() {
             Radar
           </NavLink>
         </nav>
-
-        <InstallPrompt />
       </header>
 
       <main>
@@ -74,3 +71,4 @@ export default function App() {
     </div>
   );
 }
+

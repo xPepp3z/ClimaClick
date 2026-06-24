@@ -12,7 +12,6 @@ ClimaClick e una web app meteo moderna, veloce e leggera. Nasce come progetto di
 - Flash meteo generati dai dati reali della previsione.
 - Citta preferite salvate nel localStorage.
 - Radar pioggia con mappa interattiva e timeline dei frame.
-- Esperienza PWA installabile.
 - Layout responsive per desktop e mobile.
 
 ## Stack
@@ -23,7 +22,6 @@ ClimaClick e una web app meteo moderna, veloce e leggera. Nasce come progetto di
 - React Router
 - Leaflet e React Leaflet
 - Lucide React
-- Vite PWA
 - ESLint
 
 ## API usate
@@ -112,7 +110,7 @@ Esegue ESLint su tutto il progetto.
 
 ```text
 src/
-  components/   Componenti riutilizzabili: meteo, ricerca, radar, ticker, PWA
+  components/   Componenti riutilizzabili: meteo, ricerca, radar e ticker
   hooks/        Hook applicativi, come useWeather
   pages/        Pagine principali: Home, dettaglio citta, preferiti, radar
   services/     Integrazione API e localStorage
@@ -121,11 +119,6 @@ src/
 public/         Logo, favicon e asset pubblici
 ```
 
-## PWA
-
-La configurazione PWA e in `vite.config.ts` tramite `vite-plugin-pwa`.
-
-La modalita installabile dipende dal browser e dal contesto in cui viene aperta l'app. In locale funziona su `localhost`; su rete locale con IP alcune funzioni browser, come la geolocalizzazione, possono richiedere HTTPS.
 
 ## Geolocalizzazione
 
