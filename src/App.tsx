@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import CityWeather from "./pages/CityWeather";
 import Favorites from "./pages/Favorites";
 import RadarPage from "./pages/RadarPage";
-import InstallPrompt from "./components/InstallPrompt";
 import SiteFooter from "./components/SiteFooter";
 
 type Theme = "dark" | "light";
@@ -105,7 +104,6 @@ export default function App() {
               </span>
               <span>{isLightTheme ? "Scuro" : "Chiaro"}</span>
             </button>
-            <InstallPrompt />
           </div>
         </header>
 

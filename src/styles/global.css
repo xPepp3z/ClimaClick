@@ -398,21 +398,6 @@ button {
   color: #f3f7f6;
 }
 
-.install-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 42px;
-  padding: 0 13px;
-  border: 0;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--coral), var(--lime));
-  color: #17211f;
-  font-weight: 850;
-}
-
-.install-button:hover,
 .theme-toggle:hover,
 .nav-links button:hover,
 .search-row button:hover,
@@ -1251,11 +1236,15 @@ body[data-theme="light"] .hourly-strip strong {
   }
 
   .topbar {
-    align-items: stretch;
+    position: relative;
+    align-items: center;
     flex-direction: column;
+    gap: 10px;
+    padding-top: 2px;
   }
 
   .brand {
+    order: 1;
     justify-content: center;
     margin-right: 0;
   }
@@ -1283,7 +1272,9 @@ body[data-theme="light"] .hourly-strip strong {
     justify-content: center;
   }
   .nav-links {
+    order: 2;
     justify-content: stretch;
+    width: 100%;
   }
 
   .nav-links a,
@@ -1292,15 +1283,24 @@ body[data-theme="light"] .hourly-strip strong {
   }
 
   .topbar-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    width: auto;
   }
 
-  .theme-toggle,
-  .install-button {
-    flex: 0 1 auto;
-    width: auto;
+  .theme-toggle {
+    justify-content: center;
+    flex: 0 0 42px;
+    width: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    padding: 4px;
+  }
+
+  .theme-toggle > span:last-child {
+    display: none;
   }
 
   .weather-hero {
@@ -1432,7 +1432,6 @@ button,
 .search-panel,
 .weather-ticker,
 .radar-controls,
-.install-button,
 .theme-toggle {
   transition:
     background-color 180ms ease,
@@ -1486,7 +1485,6 @@ button,
 .search-row button:hover,
 .favorite-button:hover,
 .favorite-list button:hover,
-.install-button:hover,
 .theme-toggle:hover,
 .nav-links button:hover,
 .nav-links a:hover {
