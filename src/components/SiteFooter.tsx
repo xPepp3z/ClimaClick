@@ -4,7 +4,7 @@ export default function SiteFooter({ logoSrc }: { logoSrc: string }) {
       <img className="footer-logo" src={logoSrc} alt="ClimaClick" />
       <section className="footer-block" aria-label="Informazioni progetto">
         <p className="footer-title">ClimaClick</p>
-        <p className="footer-copy">&copy; 2026 ClimaClick v1.2.0 <br></br> Tutti i diritti riservati</p>
+        <p className="footer-copy">&copy; 2026 ClimaClick v1.1.0 <br></br> Tutti i diritti riservati</p>
         <p className="footer-copy">API: Open-Meteo, Open-Meteo Geocoding e RainViewer</p>
         <div className="footer-tags" aria-label="Tecnologie usate">
           <span>React</span>

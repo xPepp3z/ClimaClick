@@ -12,7 +12,9 @@ ClimaClick e una web app meteo moderna, veloce e leggera. Nasce come progetto di
 - Flash meteo generati dai dati reali della previsione.
 - Citta preferite salvate nel localStorage.
 - Radar pioggia con mappa interattiva e timeline dei frame.
+- Tema chiaro/scuro salvato nel localStorage.
 - Layout responsive per desktop e mobile.
+- Meta tag SEO e Open Graph per la condivisione del sito.
 
 ## Stack
 
@@ -76,6 +78,22 @@ npm run dev -- --host 0.0.0.0
 
 Poi apri dal telefono l'indirizzo IP del PC con la porta indicata da Vite.
 
+## Build e cache
+
+La build di produzione viene generata in `dist`:
+
+```bash
+npm run build
+```
+
+Vite crea asset con hash nel nome dei file generati. Questo aiuta il browser a caricare la versione nuova quando cambia il codice, ma riguarda la build in `dist`, non i file sorgente in `src`.
+
+Per controllare la build localmente:
+
+```bash
+npm run preview
+```
+
 ## Script disponibili
 
 ```bash
@@ -88,7 +106,7 @@ Avvia il progetto in sviluppo.
 npm run build
 ```
 
-Compila TypeScript e genera la build di produzione in `dist`.
+Compila TypeScript e genera la build di produzione.
 
 ```bash
 npm run preview
@@ -106,15 +124,14 @@ Esegue ESLint su tutto il progetto.
 
 ```text
 src/
-  components/   Componenti riutilizzabili: meteo, ricerca, radar e ticker
+  components/   Componenti riutilizzabili: meteo, ricerca, radar, ticker e footer
   hooks/        Hook applicativi, come useWeather
   pages/        Pagine principali: Home, dettaglio citta, preferiti, radar
   services/     Integrazione API e localStorage
-  styles/       CSS globale dell'app
+  styles/       CSS globale dell'app, temi e responsive
   types/        Tipi TypeScript condivisi
 public/         Logo, favicon e asset pubblici
 ```
-
 
 ## Geolocalizzazione
 
@@ -124,9 +141,16 @@ La geolocalizzazione usa le API native del browser. Se viene rifiutata o bloccat
 
 Il radar usa RainViewer e Leaflet. La timeline mostra i frame radar disponibili, con controlli per play/pausa e selezione manuale del frame.
 
+## Tema
+
+Il tema chiaro/scuro viene gestito in React e salvato nel localStorage. Il logo cambia in base al tema per mantenere un buon contrasto nella navbar e nel footer.
+
+## Deploy
+
+Il progetto puo essere pubblicato come classica app Vite statica. In produzione e sufficiente distribuire il contenuto della cartella `dist` generata da `npm run build`.
+
 ## Stato progetto
 
-Versione attuale: `1.0.0`.
+Versione attuale: `1.1.0`.
 
 ClimaClick e pensato come progetto personale di apprendimento e sperimentazione, ma con una base concreta per diventare un piccolo servizio meteo completo.
-
